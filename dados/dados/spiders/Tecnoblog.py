@@ -1,6 +1,6 @@
 import scrapy
 
-from dados.dados.items import NoticiasItem
+from dados.items import NoticiasItem
 
 
 class TecnoblogSpider(scrapy.Spider):
