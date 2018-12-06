@@ -27,6 +27,6 @@ ITEM_PIPELINES = {'dados.pipelines.MongoDBPipeline':300,
 MONGODB_SERVER = "ds149672.mlab.com"
 MONGODB_PORT = 49672
 MONGODB_DB = "prouni"
-MONGODB_COLLECTION = "questions"
+MONGODB_COLLECTION = "seguranca"
 MONGODB_USER = 'banco1'
 MONGODB_PW = 'banco1'
