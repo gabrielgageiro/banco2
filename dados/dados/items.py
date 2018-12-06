@@ -5,12 +5,17 @@
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy.item import Item, Field
 
-class NoticiasItem(scrapy.Item):
+
+class NoticiasItem(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    title = scrapy.Field()
-    author = scrapy.Field()
-    text = scrapy.Field()
-    link = scrapy.Field()
+    title = Field()
+    author = Field()
+    text = Field()
+    link = Field()
+
+class StackItem(Item):
+    title = Field()
+    url = Field()

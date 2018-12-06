@@ -9,7 +9,7 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'dados'
+BOT_NAME = 'stack'
 
 SPIDER_MODULES = ['dados.spiders']
 NEWSPIDER_MODULE = 'dados.spiders'
@@ -67,8 +67,16 @@ ROBOTSTXT_OBEY = True
 #ITEM_PIPELINES = {
 #    'dados.pipelines.DadosPipeline': 300,
 #}
-ITEM_PIPELINES = {'dados.pipelines.DadosPipeline': 300,
+ITEM_PIPELINES = {'dados.pipelines.MongoDBPipeline':300,
                   }
+
+MONGODB_SERVER = "localhost"
+MONGODB_PORT = 27017
+MONGODB_DB = "stackoverflow"
+MONGODB_COLLECTION = "questions"
+
+
+
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
