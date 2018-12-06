@@ -23,8 +23,10 @@ ROBOTSTXT_OBEY = True
 
 ITEM_PIPELINES = {'dados.pipelines.MongoDBPipeline':300,
                   }
-
-MONGODB_SERVER = "localhost"
-MONGODB_PORT = 27017
-MONGODB_DB = "stackoverflow"
+#mongodb://<dbuser>:<dbpassword>@ds149672.mlab.com:49672/prouni
+MONGODB_SERVER = "ds149672.mlab.com"
+MONGODB_PORT = 49672
+MONGODB_DB = "prouni"
 MONGODB_COLLECTION = "questions"
+MONGODB_USER = 'banco1'
+MONGODB_PW = 'banco1'
