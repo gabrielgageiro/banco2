@@ -14,7 +14,8 @@ class TecnoblogSpider(scrapy.Spider):
 
             yield response.follow(link, self.parse_article)
 
-        next_page = response.css('a#mais::attr(href)').extract_first()
+        # next_page = response.css('a#mais::attr(href)').extract_first()
+        next_page = None
         if next_page is not None:
             yield response.follow(next_page, self.parse)
 
