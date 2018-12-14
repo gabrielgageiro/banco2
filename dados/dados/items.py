@@ -15,7 +15,12 @@ class NoticiasItem(Item):
     author = Field()
     text = Field()
     link = Field()
-
+#VEÍCULOS	MARCA	MODELO	PLACA	COR	LOCAL	DATA E HORA
 class StackItem(Item):
-    title = Field()
-    url = Field()
+    veiculos = Field()
+    marca = Field()
+    modelo = Field()
+    placa = Field()
+    cor = Field()
+    local = Field()
+    data_hora = Field()

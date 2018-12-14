@@ -23,10 +23,9 @@ ROBOTSTXT_OBEY = True
 
 ITEM_PIPELINES = {'dados.pipelines.MongoDBPipeline':300,
                   }
-#mongodb://<dbuser>:<dbpassword>@ds149672.mlab.com:49672/prouni
-MONGODB_SERVER = "ds149672.mlab.com"
-MONGODB_PORT = 49672
-MONGODB_DB = "prouni"
+MONGODB_SERVER = "localhost"
+MONGODB_PORT = 2070
+MONGODB_DB = "seguranca"
 MONGODB_COLLECTION = "bahia"
 MONGODB_USER = 'banco2'
 MONGODB_PW = 'banco2'
